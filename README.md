@@ -21,7 +21,7 @@ This is a static Vite SPA. Vercel’s Vite preset uses `vite build` with output 
 
 ## Open in v0
 
-[![Open in v0](https://iwsdk-template.labs.vercel.dev/open-in-v0.svg)](https://v0.dev/chat/api/open?title=IWSDK+Template&url=https%3A%2F%2Fiwsdk-template.labs.vercel.dev%2Fr%2Fiwsdk-template.json)
+[![Open in v0](https://v0.app/chat-static/button.svg)](https://v0.app/chat/api/open?title=IWSDK+Template&prompt=Read+the+skills+included+in+this+repo+and+set+up+the+local+development+environment.&url=https%3A%2F%2Fiwsdk-template.labs.vercel.dev%2Fr%2Fiwsdk-template.json)
 
 This repository is a [shadcn registry](https://ui.shadcn.com/docs/registry/open-in-v0).
 The registry item JSON is built to `public/r/iwsdk-template.json` and served at
