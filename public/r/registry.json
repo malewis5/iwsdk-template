@@ -65,6 +65,16 @@
           "target": "~/README.md"
         },
         {
+          "path": "AGENTS.md",
+          "type": "registry:file",
+          "target": "~/AGENTS.md"
+        },
+        {
+          "path": "CLAUDE.md",
+          "type": "registry:file",
+          "target": "~/CLAUDE.md"
+        },
+        {
           "path": "registry.json",
           "type": "registry:file",
           "target": "~/registry.json"
@@ -143,6 +153,276 @@
           "path": "public/gltf/webxr-banner/banner.gltf",
           "type": "registry:file",
           "target": "~/public/gltf/webxr-banner/banner.gltf"
+        },
+        {
+          "path": ".agents/skills/iwsdk-debug/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-debug/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-depth-occlusion/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-depth-occlusion/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-grab/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-grab/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-physics/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-physics/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-physics/references/component-reference.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-physics/references/component-reference.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-physics/references/tuning-and-config.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-physics/references/tuning-and-config.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-physics/references/workflows.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-physics/references/workflows.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/references/api-reference.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/references/api-reference.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/references/build-milestones.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/references/build-milestones.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/references/design-deck.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/references/design-deck.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/references/grounding.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/references/grounding.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/references/ideation.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/references/ideation.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-planner/references/verification.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-planner/references/verification.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-ray/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-ray/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/SKILL.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/agents/openai.yaml",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/agents/openai.yaml"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/references/asset-authoring.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/references/asset-authoring.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/references/composition-patterns.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/references/composition-patterns.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/references/image-intake.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/references/image-intake.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/references/review-and-stop.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/references/review-and-stop.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/references/scene-format.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/references/scene-format.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-scene-composer/references/text-intake.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-scene-composer/references/text-intake.md"
+        },
+        {
+          "path": ".agents/skills/iwsdk-ui/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.agents/skills/iwsdk-ui/SKILL.md"
+        },
+        {
+          "path": ".claude/agents/iwsdk-project-code-reviewer.md",
+          "type": "registry:file",
+          "target": "~/.claude/agents/iwsdk-project-code-reviewer.md"
+        },
+        {
+          "path": ".claude/rules/assets-and-manifest.md",
+          "type": "registry:file",
+          "target": "~/.claude/rules/assets-and-manifest.md"
+        },
+        {
+          "path": ".claude/rules/ecs-api.md",
+          "type": "registry:file",
+          "target": "~/.claude/rules/ecs-api.md"
+        },
+        {
+          "path": ".claude/rules/scene-json.md",
+          "type": "registry:file",
+          "target": "~/.claude/rules/scene-json.md"
+        },
+        {
+          "path": ".claude/rules/uikitml.md",
+          "type": "registry:file",
+          "target": "~/.claude/rules/uikitml.md"
+        },
+        {
+          "path": ".claude/settings.json",
+          "type": "registry:file",
+          "target": "~/.claude/settings.json"
+        },
+        {
+          "path": ".claude/skills/iwsdk-debug/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-debug/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-depth-occlusion/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-depth-occlusion/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-grab/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-grab/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-physics/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-physics/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-physics/references/component-reference.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-physics/references/component-reference.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-physics/references/tuning-and-config.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-physics/references/tuning-and-config.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-physics/references/workflows.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-physics/references/workflows.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/references/api-reference.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/references/api-reference.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/references/build-milestones.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/references/build-milestones.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/references/design-deck.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/references/design-deck.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/references/grounding.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/references/grounding.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/references/ideation.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/references/ideation.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-planner/references/verification.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-planner/references/verification.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-ray/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-ray/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/SKILL.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/agents/openai.yaml",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/agents/openai.yaml"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/references/asset-authoring.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/references/asset-authoring.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/references/composition-patterns.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/references/composition-patterns.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/references/image-intake.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/references/image-intake.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/references/review-and-stop.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/references/review-and-stop.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/references/scene-format.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/references/scene-format.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-scene-composer/references/text-intake.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-scene-composer/references/text-intake.md"
+        },
+        {
+          "path": ".claude/skills/iwsdk-ui/SKILL.md",
+          "type": "registry:file",
+          "target": "~/.claude/skills/iwsdk-ui/SKILL.md"
         }
       ]
     }
