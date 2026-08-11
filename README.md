@@ -9,8 +9,9 @@ pnpm install
 pnpm dev
 ```
 
-Use the Runtime and Editor controls in the managed browser to switch between
-the running experience and its authored scene.
+`pnpm dev` starts the Vite preview (works in v0 and locally). The WebXR emulator
+is enabled in `iwsdk.config.json` (`dev.emulator`). For the local managed
+browser with Runtime/Editor controls, use `pnpm run dev:open`.
 
 ## Deploy on Vercel
 
