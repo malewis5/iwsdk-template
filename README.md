@@ -12,8 +12,22 @@ pnpm dev
 `pnpm dev` starts Vite with `IWSDK_DEV_OPEN=false` and `IWSDK_DEV_HTTPS=false`
 so the managed Chromium browser is not launched and the server uses HTTP
 (required for v0 and other remote previews). The WebXR emulator is still
-enabled via `iwsdk.config.json` (`dev.emulator`). For the local managed browser
-with HTTPS and Runtime/Editor controls, use `pnpm run dev:open`.
+enabled via `iwsdk.config.json` (`dev.emulator`).
+
+`dev:runtime` is what `iwsdk dev up` / `restart` actually spawn. It only forces
+HTTP (`IWSDK_DEV_HTTPS=false`) so CLI flags can control the managed browser:
+`--open` / `--no-open`, `--headless` / `--headed`, `--ai-mode agent|collaborate`.
+For the local managed browser with Runtime/Editor controls, use
+`pnpm run dev:open`. For headless agent/MCP work (including in a v0 sandbox
+after Playwright Chromium + OS libs are installed):
+
+```sh
+pnpm exec iwsdk dev restart --open --headless --ai-mode agent
+pnpm exec iwsdk dev status   # wait for browserCommandReady: true
+```
+
+For the full v0-sandbox bring-up (Playwright system libs, MCP stdio client,
+emulated headset), see [docs/iwsdk-runtime-mcp.md](docs/iwsdk-runtime-mcp.md).
 
 ## Deploy on Vercel
 

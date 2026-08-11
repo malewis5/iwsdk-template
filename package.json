@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "IWSDK_DEV_OPEN=false IWSDK_DEV_HTTPS=false vite",
     "dev:open": "iwsdk dev up --open --foreground",
-    "dev:runtime": "IWSDK_DEV_OPEN=false IWSDK_DEV_HTTPS=false vite",
+    "dev:runtime": "IWSDK_DEV_HTTPS=false vite",
     "dev:down": "iwsdk dev down",
     "dev:status": "iwsdk dev status",
     "reference:status": "iwsdk reference status",

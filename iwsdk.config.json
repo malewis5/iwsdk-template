@@ -9,7 +9,10 @@
     "module": "./src/components"
   },
   "world": {
-    "xr": false,
+    "xr": {
+      "mode": "vr",
+      "offer": "always"
+    },
     "input": {
       "canvasPointerEvents": true
     },
