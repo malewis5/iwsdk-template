@@ -9,7 +9,10 @@
       "title": "IWSDK Template",
       "description": "Immersive Web SDK Vite + TypeScript starter with scene composition, spatial UI, and Vercel deploy config.",
       "dependencies": [
-        "@iwsdk/core@0.5.1"
+        "@babylonjs/havok@1.3.14",
+        "@iwsdk/core@0.5.1",
+        "@iwsdk/scene-composition@0.5.1",
+        "@zappar/msdf-generator@^1.2.4"
       ],
       "devDependencies": [
         "@iwsdk/reference@0.5.1",
@@ -17,10 +20,11 @@
         "@iwsdk/vite-plugin-dev@0.5.1",
         "@meta-quest/metavr@^1.3.2",
         "@types/three@^0.181.0",
+        "three-viewport-gizmo@^2.2.0",
         "typescript@^5.5.0",
         "vite@^7.1.4"
       ],
-      "docs": "Install dependencies with `pnpm install`, then run `pnpm dev`. The package.json pins `three` to `npm:super-three@0.181.0`.",
+      "docs": "Install dependencies with `pnpm install`, then run `pnpm dev`. The package.json pins `three` to `npm:super-three@0.181.0`. Keep the IWSDK runtime packages declared here: Vite must resolve their dynamic imports for physics, scene composition, and spatial UI.",
       "files": [
         {
           "path": "index.html",

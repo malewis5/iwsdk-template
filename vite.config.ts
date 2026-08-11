@@ -22,7 +22,6 @@ export default defineConfig(() => ({
     host: '0.0.0.0',
     port: 8081,
     open: false,
-    ...(httpsDisabled ? { https: false } : {}),
   },
   build: {
     outDir: 'dist',
