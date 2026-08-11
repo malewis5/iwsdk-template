@@ -8,8 +8,13 @@
 import { iwsdkDev } from '@iwsdk/vite-plugin-dev';
 import { defineConfig } from 'vite';
 
-export default defineConfig({
+export default defineConfig(() => ({
   plugins: [iwsdkDev()],
+  define: {
+    __APP_ENV__: JSON.stringify(
+      process.env.VITE_VERCEL_ENV ?? process.env.VERCEL_ENV ?? 'development',
+    ),
+  },
   server: { host: '0.0.0.0', port: 8081, open: false },
   build: {
     outDir: 'dist',
@@ -24,4 +29,4 @@ export default defineConfig({
   },
   publicDir: 'public',
   base: './',
-});
+}));
