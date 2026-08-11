@@ -20,7 +20,7 @@
         "typescript@^5.5.0",
         "vite@^7.1.4"
       ],
-      "docs": "Install dependencies with `npm install`, then run `npm run dev`. The package.json pins `three` to `npm:super-three@0.181.0`.",
+      "docs": "Install dependencies with `pnpm install`, then run `pnpm dev`. The package.json pins `three` to `npm:super-three@0.181.0`.",
       "files": [
         {
           "path": "index.html",

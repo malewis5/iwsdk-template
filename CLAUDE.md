@@ -20,8 +20,8 @@ reconnect automatically. Wait for `npx iwsdk dev status` to report
 `src/index.js` imports it and passes it whole to `World.create()`. Do not
 hand-build that options object.
 
-**The dev server is CLI-managed.** Use `npx iwsdk dev up` (or `npm run dev`), not
-`vite`. It launches a managed browser that hosts the MCP command bridge.
+**The dev server is CLI-managed.** Use `pnpm exec iwsdk dev up` (or `pnpm dev`),
+not `vite`. It launches a managed browser that hosts the MCP command bridge.
 `--no-open` intentionally starts only the server: status reports
 `browser.status: "not_launched"`, and browser-backed commands fail immediately
 with `browser_not_launched` plus restart guidance. One managed window hosts two

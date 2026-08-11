@@ -11,8 +11,8 @@
     "reference:status": "iwsdk reference status",
     "reference:warmup": "iwsdk reference warmup",
     "typecheck": "tsc --noEmit",
-    "registry:build": "npx --yes shadcn@latest build",
-    "build": "npm run registry:build && vite build",
+    "registry:build": "pnpm dlx shadcn@latest build",
+    "build": "pnpm run registry:build && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -28,8 +28,17 @@
     "typescript": "^5.5.0",
     "vite": "^7.1.4"
   },
-  "overrides": {
-    "sharp": "0.35.3"
+  "pnpm": {
+    "overrides": {
+      "sharp": "0.35.3"
+    },
+    "onlyBuiltDependencies": [
+      "@meta-quest/metavr",
+      "esbuild",
+      "onnxruntime-node",
+      "protobufjs",
+      "sharp"
+    ]
   },
   "engines": {
     "node": ">=20.19.0 <21.0.0-0 || >=22.12.0 <23.0.0-0 || >=24.0.0"

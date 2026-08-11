@@ -5,8 +5,8 @@ XR, and emulator configuration. Application systems remain explicit in
 `src/index.ts`.
 
 ```sh
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Use the Runtime and Editor controls in the managed browser to switch between
