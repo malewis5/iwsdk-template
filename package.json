@@ -11,7 +11,8 @@
     "reference:status": "iwsdk reference status",
     "reference:warmup": "iwsdk reference warmup",
     "typecheck": "tsc --noEmit",
-    "build": "vite build",
+    "registry:build": "npx --yes shadcn@latest build",
+    "build": "npm run registry:build && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

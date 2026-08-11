@@ -1,0 +1,143 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "iwsdk-template",
+  "homepage": "https://github.com/malewis5/iwsdk-template",
+  "items": [
+    {
+      "name": "iwsdk-template",
+      "type": "registry:item",
+      "title": "IWSDK Template",
+      "description": "Immersive Web SDK Vite + TypeScript starter with scene composition, spatial UI, and Vercel deploy config.",
+      "dependencies": [
+        "@iwsdk/core@0.5.1"
+      ],
+      "devDependencies": [
+        "@iwsdk/reference@0.5.1",
+        "@iwsdk/cli@0.5.1",
+        "@iwsdk/vite-plugin-dev@0.5.1",
+        "@meta-quest/metavr@^1.3.2",
+        "@types/three@^0.181.0",
+        "typescript@^5.5.0",
+        "vite@^7.1.4"
+      ],
+      "docs": "Install dependencies with `npm install`, then run `npm run dev`. The package.json pins `three` to `npm:super-three@0.181.0`.",
+      "files": [
+        {
+          "path": "index.html",
+          "type": "registry:file",
+          "target": "~/index.html"
+        },
+        {
+          "path": "package.json",
+          "type": "registry:file",
+          "target": "~/package.json"
+        },
+        {
+          "path": "tsconfig.json",
+          "type": "registry:file",
+          "target": "~/tsconfig.json"
+        },
+        {
+          "path": "vite.config.ts",
+          "type": "registry:file",
+          "target": "~/vite.config.ts"
+        },
+        {
+          "path": "iwsdk.config.json",
+          "type": "registry:file",
+          "target": "~/iwsdk.config.json"
+        },
+        {
+          "path": "vercel.json",
+          "type": "registry:file",
+          "target": "~/vercel.json"
+        },
+        {
+          "path": "README.md",
+          "type": "registry:file",
+          "target": "~/README.md"
+        },
+        {
+          "path": "registry.json",
+          "type": "registry:file",
+          "target": "~/registry.json"
+        },
+        {
+          "path": "src/index.ts",
+          "type": "registry:file",
+          "target": "~/src/index.ts"
+        },
+        {
+          "path": "src/assets.ts",
+          "type": "registry:file",
+          "target": "~/src/assets.ts"
+        },
+        {
+          "path": "src/components.ts",
+          "type": "registry:file",
+          "target": "~/src/components.ts"
+        },
+        {
+          "path": "src/panel.ts",
+          "type": "registry:file",
+          "target": "~/src/panel.ts"
+        },
+        {
+          "path": "src/robot.ts",
+          "type": "registry:file",
+          "target": "~/src/robot.ts"
+        },
+        {
+          "path": "src/robot-component.ts",
+          "type": "registry:file",
+          "target": "~/src/robot-component.ts"
+        },
+        {
+          "path": "src/vite-env.d.ts",
+          "type": "registry:file",
+          "target": "~/src/vite-env.d.ts"
+        },
+        {
+          "path": "src/AGENTS.md",
+          "type": "registry:file",
+          "target": "~/src/AGENTS.md"
+        },
+        {
+          "path": "public/scenes/main.iwsdk.scene.json",
+          "type": "registry:file",
+          "target": "~/public/scenes/main.iwsdk.scene.json"
+        },
+        {
+          "path": "public/scenes/AGENTS.md",
+          "type": "registry:file",
+          "target": "~/public/scenes/AGENTS.md"
+        },
+        {
+          "path": "public/ui/welcome.uikitml",
+          "type": "registry:file",
+          "target": "~/public/ui/welcome.uikitml"
+        },
+        {
+          "path": "public/ui/AGENTS.md",
+          "type": "registry:file",
+          "target": "~/public/ui/AGENTS.md"
+        },
+        {
+          "path": "public/audio/chime.mp3",
+          "type": "registry:file",
+          "target": "~/public/audio/chime.mp3"
+        },
+        {
+          "path": "public/textures/webxr.png",
+          "type": "registry:file",
+          "target": "~/public/textures/webxr.png"
+        },
+        {
+          "path": "public/gltf/webxr-banner/banner.gltf",
+          "type": "registry:file",
+          "target": "~/public/gltf/webxr-banner/banner.gltf"
+        }
+      ]
+    }
+  ]
+}
