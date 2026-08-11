@@ -30,8 +30,24 @@ export default defineConfig(() => ({
     rollupOptions: { input: './index.html' },
   },
   esbuild: { target: 'esnext' },
+  // UIKitML can otherwise resolve a second Three/UIKit graph under pnpm.
+  // Duplicated Component classes reject Horizon children such as <Divider>.
+  resolve: {
+    dedupe: [
+      'three',
+      '@pmndrs/uikit',
+      '@pmndrs/uikit-horizon',
+      '@pmndrs/uikit-lucide',
+    ],
+  },
   optimizeDeps: {
     exclude: ['@babylonjs/havok'],
+    include: [
+      '@pmndrs/uikit',
+      '@pmndrs/uikit-horizon',
+      '@pmndrs/uikit-lucide',
+      '@drawcall/uikitml',
+    ],
     esbuildOptions: { target: 'esnext' },
   },
   publicDir: 'public',
