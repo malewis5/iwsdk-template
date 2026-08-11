@@ -8,14 +8,22 @@
 import { iwsdkDev } from '@iwsdk/vite-plugin-dev';
 import { defineConfig } from 'vite';
 
+const httpsDisabled =
+  process.env.IWSDK_DEV_HTTPS === 'false' || process.env.IWSDK_DEV_HTTPS === '0';
+
 export default defineConfig(() => ({
-  plugins: [iwsdkDev()],
+  plugins: [iwsdkDev(httpsDisabled ? { https: false } : {})],
   define: {
     __APP_ENV__: JSON.stringify(
       process.env.VITE_VERCEL_ENV ?? process.env.VERCEL_ENV ?? 'development',
     ),
   },
-  server: { host: '0.0.0.0', port: 8081, open: false },
+  server: {
+    host: '0.0.0.0',
+    port: 8081,
+    open: false,
+    ...(httpsDisabled ? { https: false } : {}),
+  },
   build: {
     outDir: 'dist',
     sourcemap: process.env.NODE_ENV !== 'production',

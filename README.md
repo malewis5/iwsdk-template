@@ -9,10 +9,11 @@ pnpm install
 pnpm dev
 ```
 
-`pnpm dev` starts Vite with `IWSDK_DEV_OPEN=false` so the managed Chromium
-browser is not launched (required for v0 and other remote previews). The WebXR
-emulator is still enabled via `iwsdk.config.json` (`dev.emulator`). For the
-local managed browser with Runtime/Editor controls, use `pnpm run dev:open`.
+`pnpm dev` starts Vite with `IWSDK_DEV_OPEN=false` and `IWSDK_DEV_HTTPS=false`
+so the managed Chromium browser is not launched and the server uses HTTP
+(required for v0 and other remote previews). The WebXR emulator is still
+enabled via `iwsdk.config.json` (`dev.emulator`). For the local managed browser
+with HTTPS and Runtime/Editor controls, use `pnpm run dev:open`.
 
 ## Deploy on Vercel
 
