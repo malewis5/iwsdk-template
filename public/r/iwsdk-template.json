@@ -48,13 +48,13 @@
     },
     {
       "path": "vercel.json",
-      "content": "{\n  \"$schema\": \"https://openapi.vercel.sh/vercel.json\",\n  \"rewrites\": [\n    {\n      \"source\": \"/((?!r/).*)\",\n      \"destination\": \"/index.html\"\n    }\n  ]\n}\n",
+      "content": "{\n  \"$schema\": \"https://openapi.vercel.sh/vercel.json\",\n  \"rewrites\": [\n    {\n      \"source\": \"/((?!r/|.*\\\\..*).*)\",\n      \"destination\": \"/index.html\"\n    }\n  ]\n}\n",
       "type": "registry:file",
       "target": "~/vercel.json"
     },
     {
       "path": "README.md",
-      "content": "# IWSDK App\n\nThis project uses `iwsdk.config.json` for declarative scene, asset, component,\nXR, and emulator configuration. Application systems remain explicit in\n`src/index.ts`.\n\n```sh\npnpm install\npnpm dev\n```\n\nUse the Runtime and Editor controls in the managed browser to switch between\nthe running experience and its authored scene.\n\n## Deploy on Vercel\n\n[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmalewis5%2Fiwsdk-template&project-name=iwsdk-template&repository-name=iwsdk-template)\n\nThis is a static Vite SPA. Vercel’s Vite preset uses `vite build` with output in\n`dist`. SPA deep-link rewrites are configured in `vercel.json`.\n\n## Open in v0\n\n[![Open in v0](https://cdn.jsdelivr.net/gh/malewis5/iwsdk-template@main/public/open-in-v0.svg)](https://v0.dev/chat/api/open?title=IWSDK+Template&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmalewis5%2Fiwsdk-template%40main%2Fpublic%2Fr%2Fiwsdk-template.json)\n\nThis repository is a [shadcn registry](https://ui.shadcn.com/docs/registry/open-in-v0).\nThe registry item JSON is built to `public/r/iwsdk-template.json` and served at\n`/r/iwsdk-template.json` after deploy.\n",
+      "content": "# IWSDK App\n\nThis project uses `iwsdk.config.json` for declarative scene, asset, component,\nXR, and emulator configuration. Application systems remain explicit in\n`src/index.ts`.\n\n```sh\npnpm install\npnpm dev\n```\n\nUse the Runtime and Editor controls in the managed browser to switch between\nthe running experience and its authored scene.\n\n## Deploy on Vercel\n\n[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmalewis5%2Fiwsdk-template&project-name=iwsdk-template&repository-name=iwsdk-template)\n\nThis is a static Vite SPA. Vercel’s Vite preset uses `vite build` with output in\n`dist`. SPA deep-link rewrites are configured in `vercel.json`.\n\n## Open in v0\n\n[![Open in v0](https://iwsdk-template.labs.vercel.dev/open-in-v0.svg)](https://v0.dev/chat/api/open?title=IWSDK+Template&url=https%3A%2F%2Fiwsdk-template.labs.vercel.dev%2Fr%2Fiwsdk-template.json)\n\nThis repository is a [shadcn registry](https://ui.shadcn.com/docs/registry/open-in-v0).\nThe registry item JSON is built to `public/r/iwsdk-template.json` and served at\n[https://iwsdk-template.labs.vercel.dev/r/iwsdk-template.json](https://iwsdk-template.labs.vercel.dev/r/iwsdk-template.json).\n",
       "type": "registry:file",
       "target": "~/README.md"
     },
