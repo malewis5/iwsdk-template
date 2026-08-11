@@ -46,6 +46,8 @@ export default defineConfig(() => ({
       '@pmndrs/uikit',
       '@pmndrs/uikit-horizon',
       '@pmndrs/uikit-lucide',
+      // Direct dep so pnpm can resolve bare optimizeDeps.include (avoids
+      // first-load "Failed to resolve" → Vite re-optimize → preview reload).
       '@drawcall/uikitml',
     ],
     esbuildOptions: { target: 'esnext' },
