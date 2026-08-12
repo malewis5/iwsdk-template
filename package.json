@@ -13,7 +13,7 @@
     "reference:warmup": "iwsdk reference warmup",
     "typecheck": "tsc --noEmit",
     "registry:build": "pnpm dlx shadcn@latest build",
-    "build": "pnpm run registry:build && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
